@@ -4,8 +4,9 @@
       .cls-1 {
         fill: #fff;
         font-size: 30px;
-        font-family: Montserrat-Bold, Montserrat;
+        font-family: Montserrat-Bold, Montserrat, sans-serif;
         font-weight: 700;
+        letter-spacing: 0.0005em;
       }
 
       .cls-2 {
