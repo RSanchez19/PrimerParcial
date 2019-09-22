@@ -17,7 +17,7 @@ body {
     text-align: center;
     font-weight: 400;
 }
-
+/* Modificando margenes y añadiendo flex al header*/
 .header {
     margin-top: 1.5em;
     margin-right: 1.5em;
@@ -106,7 +106,7 @@ p{
     padding: 0.1em;
 }
 
-
+/* Modificando green area */
 .green-area {
     background-color: #0AC693; 
 }
@@ -207,6 +207,7 @@ p{
 
 }
 
+/* Modificando formulario de contacto */
 .contact {
     display: flex;
     flex-direction: column;
@@ -260,7 +261,7 @@ p{
 .black-decoration{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
-
+/* Modificando footer */
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
@@ -308,7 +309,7 @@ footer>p{
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-    
+    /* Modificando big-hero*/
     .big-hero img{
         width: 220px;
     }
@@ -322,7 +323,7 @@ footer>p{
         font-size: 1.2rem;
         
     }
-
+    /* Modificando green area */
     .green-area{
         padding: 2rem;
     }
@@ -360,6 +361,8 @@ footer>p{
         font-size: 1.1rem;
     }
 
+    /* Modificando about */
+
     .about h2{
         font-size: 1.5rem;
     }
@@ -391,7 +394,16 @@ footer>p{
 @media only screen and (min-width: 1024px) {
 
        /*TODO: FALTA CSS */
-     
+     /* Modificando logo/header y big-hero */
+       .logo{
+           margin-top: 3rem;
+       }
+
+       .big-hero img{
+           width: 300px;
+
+       }
+
        .menu {
         background-color: #112935; 
         position: static;
@@ -401,6 +413,65 @@ footer>p{
         display: flex;
         margin-top: 1em;
     }
+    /*Modificando green area */
+    .green-area{
+        padding: 2rem;
+
+        
+    }
+
+    .post h2{
+        margin-top: -1rem;
+    }
+
+    .post article{
+        min-height: 300px;
+        max-height: 1000px;
+        min-width: 300px;
+        max-width: 360px;
+
+    }
+
+    .post img{
+        width: 100%;
+
+    }
+
+
+   /* Modificando about  */
+   .about>.container{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 200px;
+    grid-gap: 2px;
+   }
+
+   .about>.container h2{
+    text-align: center;
+
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  
+
+   }
+
+   .bio-info{
+
+       grid-column-start: 1;
+       grid-column-end: 1;
+     
+   }
+
+   .contact{
+
+       grid-column-start: 2;
+       grid-column-end: 2;
+   }
+
+   
+
      
     .hide-desktop{
         display: none;
@@ -417,7 +488,9 @@ footer>p{
         margin: 0 auto;
         max-width: 1440px;
     }
-    
+
+    /* Modifcando menu/header */
+
     .menu {
         background-color: #112935; 
         position: static;
@@ -427,7 +500,40 @@ footer>p{
         display: flex;
         margin-top: 1em;
     }
- 
+
+
+    /* Modificando about */
+    .about>.container{
+        display: grid;
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 200px;
+        grid-gap: 2px;
+       }
+    
+       .about>.container h2{
+        text-align: center;
+    
+     
+        grid-column-start: 1;
+        grid-column-end: 2;
+      
+    
+       }
+    
+       .bio-info{
+    
+           grid-column-start: 1;
+           grid-column-end: 1;
+         
+       }
+    
+       .contact{
+    
+           grid-column-start: 2;
+           grid-column-end: 2;
+       }
+    
+
     .hide-desktop{
         display: none;
     }
