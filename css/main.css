@@ -66,7 +66,7 @@ p{
 
 /* Big area */
 .big-hero img {
-    width: 135px;
+    width: 150px;
     margin-bottom: 0.5em;
 }
 
@@ -131,6 +131,8 @@ p{
 
 .post ul li {
     min-height: 350px;
+    max-height: 1000px;
+    min-width: 200px;
     max-width: 300px;
     margin: 2rem auto;
 }
@@ -306,7 +308,28 @@ footer>p{
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  
+    
+    .big-hero img{
+        width: 220px;
+    }
+    
+    .big-hero h2{
+       font-size: 2.5rem;
+    }
+
+    .big-hero p{
+        margin-top: 0.2rem;
+        font-size: 1.2rem;
+        
+    }
+
+    .green-area{
+        padding: 2rem;
+    }
+    
+    .green-area h2{
+        font-size: 1.5rem;
+    }
     .post ul {
         list-style: none;
         display: flex;
@@ -317,34 +340,48 @@ footer>p{
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
+        min-width: 350px;
+        max-width: 3500px;
         margin: 1rem 2rem;
-        flex: 1 0 300px;
+        flex: 1 1 300px;
     }
 
+    .post article img{
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .post article h3{
+        font-size: 1.25em;
+    }
+    
+    .post article p{
+        font-size: 1.1rem;
+    }
+
+    .about h2{
+        font-size: 1.5rem;
+    }
+    .bio-info img{
+        margin-top: -1rem;
+        margin-bottom: 0.5rem;
+        width: 220px;
+    }
+
+    .bio-info p{
+        margin-top: -0.2rem;
+        font-size: 1.1rem;
+    }
 
     .logo {
         width: 150px;
-        margin: 1.5em;
+        margin-top: 0.1rem;
     }
 
     .show-desktop {
-        display: block;
-    }
-
-    .hide-desktop {
         display: none;
     }
-
-    .menu {
-        background-color: #112935; 
-        position: static;
-        z-index: 20;
-        width: auto;
-        height:auto;
-        display: flex;
-        margin-top: 1em;
-    }
-
 
 
 
@@ -354,8 +391,21 @@ footer>p{
 @media only screen and (min-width: 1024px) {
 
        /*TODO: FALTA CSS */
-
-
+     
+       .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+        margin-top: 1em;
+    }
+     
+    .hide-desktop{
+        display: none;
+    }
+      
 
 }
 
@@ -367,4 +417,21 @@ footer>p{
         margin: 0 auto;
         max-width: 1440px;
     }
+    
+    .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+        margin-top: 1em;
+    }
+ 
+    .hide-desktop{
+        display: none;
+    }
+    
+
+
 }
