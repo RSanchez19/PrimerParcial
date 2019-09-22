@@ -44,7 +44,7 @@ p{
 }
 
 .logo {
-    width: 110px;
+    width: 90px;
 }
 
 .options {
@@ -79,7 +79,7 @@ p{
 
 .big-hero p {
     font-size: 0.9em;;
-    color: rgba(190, 190, 190, 0.89);
+    color: rgba(226, 226, 226, 0.87);
     margin-top: -0.7em;
     letter-spacing: 0.000em;
     
@@ -185,20 +185,24 @@ p{
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.125em;
-    margin: 2em;
+    font-size: 1.30em;
+    margin: 3em;
+    letter-spacing: 0.0005em;
 }
 
 .bio-info img{
-   width: 200px;
+   width: 150px;
 }
 
 .bio-info p{
-    font-size: 16px;
+    font-size: 14px;
     padding: 2em;
+    margin: 1em 2rem;
     text-align: left;
     line-height: 25px;
     letter-spacing: 2px;
+    color: rgba(248, 247, 247, 0.911);
+
 }
 
 .contact {
@@ -206,15 +210,20 @@ p{
     flex-direction: column;
     text-align: left;
     padding: 0px 1em;
+    margin: 0rem 2.1rem;
 }
 
 .contact * + * {
-    margin-top: 1.5em;
+    margin-top: 1em;
+
 }
 
 .contact-form {
+    font-weight: bold;
+
     display: flex;
     flex-direction: column;
+
 }
 
 .contact-form input, .contact-form textarea{
@@ -223,6 +232,7 @@ p{
     border-radius: 0px 2em;
     font-size: 1em;
     width: 100%;
+    margin-bottom: 0.8em;
 }
 
 /* Decorando placeholder */
@@ -242,6 +252,7 @@ p{
     font-weight: 400;
     color: white;
     font-size: 1rem;
+    margin-bottom: 3.5rem;
 }
 
 .black-decoration{
@@ -251,10 +262,19 @@ p{
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    
 }
 
 footer .social-links {
-    margin: 0;
+    margin-top: -6.5rem;
+}
+
+footer>p{
+    margin-top: -5.5rem;
 }
 
 .menu {
